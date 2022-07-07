@@ -19,7 +19,7 @@
 1. Project Clone
 
 ```
-$ git clone https://github.com/rapidmon/Triple-Assignment.git
+$ git clone https://github.com/rapidmon/tripleassignment
 ```
 
 2. Dependencies Install
