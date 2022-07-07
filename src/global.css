@@ -94,6 +94,10 @@ video {
   vertical-align: baseline;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   font-family: sans-serif;
   min-width: 1200px;
