@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import CountUp from "../../hook/useCountup";
 
 const Text = styled.li`
   font-size: 36px;
@@ -17,7 +18,7 @@ function Content({ num, strong, text }) {
   return (
     <Text>
       <Emphasis>
-        <span>{num}</span>
+        <span {...CountUp(num)}>{num}</span>
         {strong}
       </Emphasis>
       {text}
