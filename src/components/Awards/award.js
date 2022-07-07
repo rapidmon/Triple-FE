@@ -2,7 +2,7 @@ import styled from "styled-components";
 import playstore from "../../assets/play-store2x.png";
 import appstore from "../../assets/badge-apple4x.png";
 
-const Item = styled.div`
+const Item = styled.li`
   background-size: 54px 54px;
   height: 54px;
   padding: 5px 0px 5px 62px;

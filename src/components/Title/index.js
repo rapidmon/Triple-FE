@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Content from "./content";
 
-const ContentWrapper = styled.div`
+const ContentWrapper = styled.ul`
   margin-left: 623px;
   padding-top: 150px;
 `;

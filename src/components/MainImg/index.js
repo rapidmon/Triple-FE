@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import triple from "../../assets/triple2x.png";
 
-const Logo = styled.div`
+const Logo = styled.p`
   position: absolute;
   top: 150px;
   width: 400px;

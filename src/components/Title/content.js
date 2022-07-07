@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Text = styled.div`
+const Text = styled.li`
   font-size: 36px;
   letter-spacing: -1px;
   color: var(--color-gray);

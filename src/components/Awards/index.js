@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Award from "./award";
 
-const AwardWrapper = styled.div`
+const AwardWrapper = styled.ul`
   white-space: nowrap;
   margin: 50px 0px 140px 623px;
   transition: 0.7s ease-in-out 0.5s;
