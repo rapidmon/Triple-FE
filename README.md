@@ -1,4 +1,4 @@
-# Triple-Fe-Assignment
+# Triple-FE-Assignment
 
 ![완성예시](src/assets/Assignment-Example.gif)
 
