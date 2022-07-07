@@ -1,9 +1,13 @@
 import styled from "styled-components";
 import Content from "./content";
+import fadeIn from "../../theme/fadeIn";
 
 const ContentWrapper = styled.ul`
   margin-left: 623px;
   padding-top: 150px;
+  transform: translate3d(0, 10px, 0);
+  opacity: 0;
+  animation: ${fadeIn} 0.7s ease-in-out 0.4s forwards;
 `;
 
 function Title() {

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import triple from "../../assets/triple2x.png";
+import fadeIn from "../../theme/fadeIn";
 
 const Logo = styled.p`
   position: absolute;
@@ -14,6 +15,9 @@ const Logo = styled.p`
   background-repeat: no-repeat;
   text-align: center;
   color: var(--color-gray700);
+  transform: translate3d(0, 10px, 0);
+  opacity: 0;
+  animation: ${fadeIn} 0.7s ease-in-out 0.3s forwards;
 `;
 
 function MainImg() {

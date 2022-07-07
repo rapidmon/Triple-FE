@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import Award from "./award";
+import fadeIn from "../../theme/fadeIn";
 
 const AwardWrapper = styled.ul`
   white-space: nowrap;
   margin: 50px 0px 140px 623px;
-  transition: 0.7s ease-in-out 0.5s;
+  transform: translate3d(0, 10px, 0);
+  opacity: 0;
+  animation: ${fadeIn} 0.7s ease-in-out 0.5s forwards;
 `;
 
 function Awards() {
