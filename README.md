@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Triple-Fe-Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![완성예시](src/assets/triple-guide-section-1.gif)
 
-## Available Scripts
+<br/>
 
-In the project directory, you can run:
+## 개발환경
 
-### `npm start`
+| type |    version    |
+| :--: | :-----------: |
+|  OS  | Windows11 X64 |
+| Node |    16.14.0    |
+| Npm  |     8.3.1     |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 프로젝트 실행방법
 
-### `npm test`
+1. Project Clone
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+$ git clone https://github.com/rapidmon/Triple-Assignment.git
+```
 
-### `npm run build`
+2. Dependencies Install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+$ npm i
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Running Mode
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+$ npm start
+```
 
-### `npm run eject`
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 폴더구조
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+src
+ ┣ assets
+ ┃  ┣ badge-apple4x.png
+ ┃  ┣ play-store2x.png
+ ┃  ┣ triple-guide-section-1.gif
+ ┃  ┗ triple2x.png
+ ┣ components
+ ┃  ┣ Awards
+ ┃  ┃  ┣ award.js
+ ┃  ┃  ┗ index.js
+ ┃  ┣ MainImg
+ ┃  ┃  ┗ index.js
+ ┃  ┗ Title
+ ┃     ┣ content.js
+ ┃     ┣ emphasis.js
+ ┃     ┗ index.js
+ ┣ hook
+ ┃  ┗ useCountup.js
+ ┣ lib
+ ┃  ┣ constants.js
+ ┃  ┗ util.js
+ ┣ page
+ ┃  ┗ Section.js
+ ┣ theme
+ ┃  ┗ fadeIn.js
+ ┣ App.js
+ ┣ global.css
+ ┗ index.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br>
 
-## Learn More
+## 사용한 기술과 선택한 이유
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Styled-components : JS와 CSS사이의 상수와 함수를 쉽게 공유할 수 있기 때문에 채택하여 사용하게 되었습니다. 인터랙션이 늦어지는 단점이 있긴 하지만 본 과제와 같이 작은 규모에서는 크게 영향이 없을 것이라고 생각했습니다.
+- Prettier : 일관성 있는 코드 스타일을 위해 예전부터 사용해 왔던 Prettier를 사용했습니다.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br/>
 
-### Code Splitting
+## 구현 애니메이션
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br/>
 
-### Analyzing the Bundle Size
+### 영역별 등장 애니메이션
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- 좌측 이미지, 지표 문구, 수상 내역 순으로 100ms 간격을 두고 살짝 위로 떠오르는 듯한 애니메이션을 구현했습니다.
+- styled 컴포넌트의 keyframe을 이용하여 구현했습니다.
 
-### Making a Progressive Web App
+### 숫자가 올라가는 애니메이션
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 각 숫자는 0부터 시작합니다.
+- setInterval을 사용하여 세 숫자 모두 2초 동안 증가하고 끝납니다. 다만 Math.round로 인한 차이가 약간씩 나는게 아쉽습니다.
+- easeOutExpo util을 사용해 증가 속도가 느려지는 효과를 구현했습니다.
