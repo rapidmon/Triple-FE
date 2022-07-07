@@ -74,6 +74,14 @@ src
 
 ## 사용한 기술과 선택한 이유
 
+<p>
+  <img src="https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=for-the-badge&logo=javascript&logoColor=000000&labelColor=%23FFCE5A&color=%23FFCE5A">
+  <img src="https://img.shields.io/badge/-React-222222?style=for-the-badge&logo=react">
+  <img src="https://img.shields.io/badge/-Prettier-F7B93E?style=for-the-badge&logo=Prettier">
+  <img src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=ffffff">
+  <img src="https://user-images.githubusercontent.com/73818206/176097620-fd66a357-2bb3-41d3-ab8a-0d779fa49e39.svg">
+</p>
+
 - Styled-components : JS와 CSS사이의 상수와 함수를 쉽게 공유할 수 있기 때문에 채택하여 사용하게 되었습니다. 인터랙션이 늦어지는 단점이 있긴 하지만 본 과제와 같이 작은 규모에서는 크게 영향이 없을 것이라고 생각했습니다.
 - Prettier : 일관성 있는 코드 스타일을 위해 예전부터 사용해 왔던 Prettier를 사용했습니다.
 
