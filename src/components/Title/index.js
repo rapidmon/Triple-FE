@@ -13,9 +13,21 @@ const ContentWrapper = styled.ul`
 function Title() {
   return (
     <ContentWrapper>
-      <Content num="700" strong="만 명" text="의 여행자"></Content>
-      <Content num="100" strong="만 개" text="의 여행 리뷰"></Content>
-      <Content num="470" strong="만 개" text="의 여행 일정"></Content>
+      <Content
+        countUpNumber="700"
+        unitText="만 명"
+        nounText="의 여행자"
+      ></Content>
+      <Content
+        countUpNumber="100"
+        unitText="만 개"
+        nounText="의 여행 리뷰"
+      ></Content>
+      <Content
+        countUpNumber="470"
+        unitText="만 개"
+        nounText="의 여행 일정"
+      ></Content>
     </ContentWrapper>
   );
 }

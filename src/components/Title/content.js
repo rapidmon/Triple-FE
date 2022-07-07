@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import CountUp from "../../hook/useCountup";
+import Emphasis from "./emphasis";
 
 const Text = styled.li`
   font-size: 36px;
@@ -10,18 +10,12 @@ const Text = styled.li`
   line-height: 36px;
 `;
 
-const Emphasis = styled.strong`
-  font-weight: bold;
-`;
-
-function Content({ num, strong, text }) {
+function Content({ countUpNumber, unitText, nounText }) {
   return (
     <Text>
-      <Emphasis>
-        <span {...CountUp(num)}>{num}</span>
-        {strong}
-      </Emphasis>
-      {text}
+      <Emphasis Emphasiscontent={countUpNumber} />
+      <Emphasis Emphasiscontent={unitText} />
+      {nounText}
     </Text>
   );
 }
