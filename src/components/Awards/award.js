@@ -19,12 +19,12 @@ const Item = styled.li`
   font-weight: bold;
 `;
 
-function Award({ text1, text2, id }) {
+function Award({ yearAndStore, awardContent, id }) {
   return (
     <Item id={id}>
-      {text1}
+      {yearAndStore}
       <br />
-      {text2}
+      {awardContent}
     </Item>
   );
 }
