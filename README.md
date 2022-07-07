@@ -1,6 +1,6 @@
 # Triple-Fe-Assignment
 
-![완성예시](src/assets/triple-guide-section-1.gif)
+![완성예시](src/assets/Assignment-Example.gif)
 
 <br/>
 
@@ -77,7 +77,7 @@ src
 <p>
   <img src="https://img.shields.io/badge/-JavaScript-%23F7DF1C?style=for-the-badge&logo=javascript&logoColor=000000&labelColor=%23FFCE5A&color=%23FFCE5A">
   <img src="https://img.shields.io/badge/-React-222222?style=for-the-badge&logo=react">
-  <img src="https://img.shields.io/badge/-Prettier-F7B93E?style=for-the-badge&logo=Prettier">
+  <img src="https://img.shields.io/badge/-Prettier-F7B93E?style=for-the-badge&logo=prettier">
   <img src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=ffffff">
   <img src="https://user-images.githubusercontent.com/73818206/176097620-fd66a357-2bb3-41d3-ab8a-0d779fa49e39.svg">
 </p>
@@ -101,3 +101,13 @@ src
 - 각 숫자는 0부터 시작합니다.
 - setInterval을 사용하여 세 숫자 모두 2초 동안 증가하고 끝납니다. 다만 Math.round로 인한 차이가 약간씩 나는게 아쉽습니다.
 - easeOutExpo util을 사용해 증가 속도가 느려지는 효과를 구현했습니다.
+
+<br>
+
+## 에러
+
+<br/>
+
+### clearInterval 오류
+
+progress === 1 이라고 생각해서 1을 true로 해주었는데, 생각대로 작동하지 않았습니다. 그래서 원래대로 progress === 1 로 코드를 고쳐주었습니다.
